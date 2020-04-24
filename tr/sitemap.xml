@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ozyinc.com/tr/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ozyinc.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ozyinc.com/tr/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ozyinc.com/tr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ozyinc.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ozyinc.com/tr/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ozyinc.com/tr/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ozyinc.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ozyinc.com/tr/tags/"
+                />
+  </url>
+  
+</urlset>
