@@ -1,9 +1,5 @@
-### My personal webpage
+### My personal webpage generated content
 
-The page is under construction 
+This repository only includes generated artifacts for my webpage [here](https://ozyinc.com) and this README file. The actual source for the web page is available [here](https://github.com/ozyinc/website).
 
-#### Dev live server
-Run the dev server like any other hugo project by `hugo server`.
 
-#### Deployment
-Run `hugo` and deploy the directory public to whatever platform you want to have your website on.
