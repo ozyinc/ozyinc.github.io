@@ -11,8 +11,8 @@
 <meta itemprop="description" content="Background I have purchased the domain ozyinc.com a long time ago to host custom servers (work-related, hobby and Minecraft 😄 ), VPN server, etc&hellip; however I have never started building my own website and for many years the homepage was an Express server behind an NGINX reverse proxy displaying Hello World on GET /.
 The case with Elm and not-ever-finishing website Then, one day I wanted to try using Elm to build my customized page, being accustomed to the ecosystem for some time.">
 <meta itemprop="datePublished" content="2020-04-24T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-04-29T14:43:57&#43;03:00" />
-<meta itemprop="wordCount" content="798">
+<meta itemprop="dateModified" content="2020-04-29T15:40:05&#43;03:00" />
+<meta itemprop="wordCount" content="1166">
 
 
 
@@ -22,7 +22,7 @@ The case with Elm and not-ever-finishing website Then, one day I wanted to try u
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ozyinc.com/blog/thispage/" />
 <meta property="article:published_time" content="2020-04-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-04-29T14:43:57+03:00" />
+<meta property="article:modified_time" content="2020-04-29T15:40:05+03:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating my website in Github Pages using Hugo"/>
 <meta name="twitter:description" content="Background I have purchased the domain ozyinc.com a long time ago to host custom servers (work-related, hobby and Minecraft 😄 ), VPN server, etc&hellip; however I have never started building my own website and for many years the homepage was an Express server behind an NGINX reverse proxy displaying Hello World on GET /.
@@ -68,10 +68,14 @@ The case with Elm and not-ever-finishing website Then, one day I wanted to try u
 	</div>
 
 
-	<main class="site-main section-inner thin animated fadeIn faster">
-		<h1>Creating my website in Github Pages using Hugo</h1>
-		<div class="content">
-			<h3 id="background">Background<a href="#background" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>24 Apr 2020</span></div>
+				<h1>Creating my website in Github Pages using Hugo</h1>
+			</header>
+			<div class="content">
+				<h3 id="background">Background<a href="#background" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>I have purchased the domain <a href="https://ozyinc.com">ozyinc.com</a> a long time ago to host custom servers (work-related, hobby and Minecraft 😄 ), VPN server, etc&hellip; however I have never started building my own website and for many years the homepage was an Express server behind an NGINX reverse proxy displaying Hello World on GET <code>/</code>.</p>
 <h3 id="the-case-with-elm-and-not-ever-finishing-website">The case with Elm and not-ever-finishing website<a href="#the-case-with-elm-and-not-ever-finishing-website" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Then, one day I wanted to try using Elm to build my customized page, being accustomed to the ecosystem for some time. There was a static site generator for Elm, namely <a href="https://elm-pages.com/">elm-pages</a> however I thought that it would be fun to create all my custom routes and display different front-end wizardry on my home page, just for fun and experience. I was able to build yet another Hello world page successfully with the Elm compiler this time on GitHub Pages. However, I didn&rsquo;t create more content to it. I was always trying to attend to other projects, freelancing, job applications, university applications etc&hellip;, thus the second version for my website has also failed (ahem&hellip; put on hold indefinitely).</p>
@@ -97,9 +101,29 @@ The case with Elm and not-ever-finishing website Then, one day I wanted to try u
 <h3 id="github-pages">Github Pages<a href="#github-pages" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Unfortunately, for Github Pages, if you are trying to build a page for yourself (in form of &lt;username&gt;.github.io), you can&rsquo;t use Github Pages to full extend. You only can have Github Page (pun intended 😅), with the HTML content present at the root of the repository and all the code served from that root. There is no way to customize the serve path or branch (for project pages or organization pages you can specify a different branch or folder FYI.). I preferred to not to have the generated artifacts and source code for my page exist on the same location for maintainability, clear coding and easy deployment (considering Hugo and Jekyll both dump the generated content into a folder named <code>public</code>). Therefore, I have created another repository, moved all the code for my site there and update the page repository whenever I push new things to <code>master</code> of the code repo.</p>
 <h3 id="final-touch-github-actions">Final Touch: Github Actions!<a href="#final-touch-github-actions" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<h4 id="todo">TODO<a href="#todo" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>In order to automate the deployment of my page I have added a Github Pipeline to build the page and do a commit to the actual website repo. I have used some already prepared steps to run my pipeline, namely <a href="https://github.com/actions/checkout">Github Checkout (default for all actions)</a>, <a href="https://github.com/peaceiris/actions-hugo">Hugo Actions</a> and <a href="https://github.com/JamesIves/github-pages-deploy-action">Github Pages Deploy Action</a>.</p>
+<p>At first, I tried creating deploy keys or personal tokens to be used in Deploy action, however Github didn&rsquo;t allow access even when I provide the token with all authorization it needs to change and deploy the repo. Thus, upon consulting the documentation of the Deploy Action, I have learned that by using <a href="https://github.com/webfactory/ssh-agent">SSH Agent Action</a> I can login to GitHub with SSH. This approach worked wonderfully.</p>
+<p>As the last problem, the theme I have used for this site was not present when the page was deployed, which I fixed by adding the <code>submodules: recursive</code> argument to the Checkout action <a href="https://github.com/ozyinc/website/blob/master/.github/workflows/default.yml#L16">here</a></p>
+<p>In the end I finally have a automated pipeline for deploying my page.</p>
+<h3 id="bonus-cloudflare">Bonus: Cloudflare<a href="#bonus-cloudflare" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Before I started building my page, I knew that <a href="https://cloudflare.com">Cloudflare</a> offers a free plan, in which you can get your website&rsquo;s assets cached and be served from whenever the users access your page from. I know that the Github Pages already use CDN to serve pages, however I have seen CloudFlare perform better than Github, since their caches are more widespread (especially in Turkey, where I reside). Therefore I have created a free account, redirected the DNS and did few configurations.</p>
+<p>Aaandd&hellip; everything blew up. Apparently the CSS optimizer of Hugo and Cloudflare don&rsquo;t agree on what a minified CSS should feature, thus when Cloudflare re-optimized my CSS files when serving from its cache, the integrity check has failed and none of the styles were rendered. I fixed this by turning CSS optimization off on Cloudflare&rsquo;s side since Hugo already did a good job at minifying and fingerprinting my CSS.</p>
+<h3 id="conclusion">Conclusion<a href="#conclusion" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>In the end, I have archived everything that I wanted to have; a simple, nice-looking, light website, continuous deployment and the extensibility I need. I hope you enjoyed reading this article and maybe it is helpful to someone that wants to build a similar website.</p>
+<p>Have a nice day!</p>
 
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1166 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>24-04-2020</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="https://github.com/ozyinc/website/commit/e47f8330ea73dec7f802ac52824232168200f33e" target="_blank" rel="noopener">e47f833</a> @ 29-04-2020</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
 		</div>
+		<div id="comments" class="thin">
+</div>
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
